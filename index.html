@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry Malaika ❤️‍🩹🥺</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #080203;
+  color: white;
+  font-family: Georgia, serif;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 560px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 45%,
+      rgba(111, 13, 28, .38), transparent 55%),
+    linear-gradient(#100509, #030102 80%);
+}
+.lights {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  width: 90%;
+  height: 25%;
+  border-top: 2px solid #6b3430;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 8px #ff9c42);
+}
+.light {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ffd18a;
+  box-shadow: 0 0 12px 4px #ff9d42;
+  animation: twinkle 1.5s infinite alternate;
+}
+@keyframes twinkle {
+  from { opacity: .35; }
+  to { opacity: 1; }
+}
+.heart {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 70px;
+  color: #ff254f;
+  text-shadow: 0 0 15px #ff003c,
+               0 0 35px #ff003c;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  50% { transform: translateX(-50%) scale(1.12); }
+}
+.title {
+  position: absolute;
+  top: 3%;
+  width: 100%;
+  text-align: center;
+  color: #ffd8df;
+  font-size: 23px;
+  text-shadow: 0 0 12px #ff244f;
+  letter-spacing: 2px;
+}
+.floor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 27%;
+  background: linear-gradient(#20080c, #050203);
+  border-top: 1px solid #4d1822;
+}
+.candle {
+  position: absolute;
+  bottom: 8%;
+  width: 17px;
+  height: 48px;
+  background: linear-gradient(90deg, #75432e, #f4c38a, #75432e);
+  border-radius: 3px;
+  box-shadow: 0 0 22px #a84b25;
+}
+.candle::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 17px;
+  left: 3px;
+  top: -15px;
+  background: #ffdc8b;
+  border-radius: 50% 50% 45% 45%;
+  box-shadow: 0 0 20px #ff8d35;
+  animation: flicker .2s infinite alternate;
+}
+@keyframes flicker {
+  from { transform: scale(1) rotate(-4deg); }
+  to { transform: scale(.8) rotate(4deg); }
+}
+.petal {
+  position: absolute;
+  color: #c90832;
+  animation: drift linear infinite;
+}
+@keyframes drift {
+  from { transform: translateY(-10vh) rotate(0deg); }
+  to { transform: translateY(110vh) rotate(600deg); }
+}
+.couple {
+  position: absolute;
+  bottom: 11%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  width: 310px;
+  justify-content: center;
+}
+.man {
+  position: relative;
+  width: 110px;
+  height: 205px;
+  animation: kneel 2s ease-out forwards;
+  transform-origin: bottom center;
+}
+@keyframes kneel {
+  from { transform: translateY(-100px) scale(.8); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+.head {
+  position: absolute;
+  top: 0;
+  left: 39px;
+  width: 38px;
+  height: 43px;
+  background: #b87958;
+  border-radius: 48% 48% 42% 42%;
+}
+.hair {
+  position: absolute;
+  top: -5px;
+  left: 36px;
+  width: 43px;
+  height: 20px;
+  background: #171010;
+  border-radius: 60% 60% 20% 20%;
+  z-index: 2;
+}
+.bodyman {
+  position: absolute;
+  top: 39px;
+  left: 25px;
+  width: 65px;
+  height: 86px;
+  background: linear-gradient(100deg, #090909, #292020, #090909);
+  border-radius: 18px 18px 5px 5px;
+  transform: rotate(-12deg);
+}
+.arm {
+  position: absolute;
+  top: 82px;
+  left: 54px;
+  width: 72px;
+  height: 17px;
+  background: #171313;
+  border-radius: 15px;
+  transform: rotate(-17deg);
+  transform-origin: left center;
+}
+.hand {
+  position: absolute;
+  top: 67px;
+  left: 112px;
+  width: 19px;
+  height: 16px;
+  background: #b87958;
+  border-radius: 50%;
+}
+.leg {
+  position: absolute;
+  top: 112px;
+  left: 22px;
+  width: 78px;
+  height: 34px;
+  background: #111;
+  border-radius: 15px;
+  transform: rotate(25deg);
+}
+.knee {
+  position: absolute;
+  top: 139px;
+  left: 50px;
+  width: 65px;
+  height: 29px;
+  background: #151515;
+  border-radius: 12px;
+  transform: rotate(-5deg);
+}
+.shoe {
+  position: absolute;
+  top: 159px;
+  left: 12px;
+  width: 55px;
+  height: 20px;
+  background: #050505;
+  border-radius: 50% 10% 10% 30%;
+}
+.girl {
+  position: relative;
+  width: 115px;
+  height: 250px;
+  animation: appear 2s ease-out;
+}
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.ghead {
+  position: absolute;
+  top: 0;
+  left: 39px;
+  width: 43px;
+  height: 48px;
+  background: #d49a78;
+  border-radius: 50%;
+  z-index: 2;
+}
+.ghair {
+  position: absolute;
+  top: -8px;
+  left: 30px;
+  width: 60px;
+  height: 92px;
+  background: #1b100f;
+  border-radius: 45% 45% 40% 40%;
+  z-index: 3;
+}
+.gbody {
+  position: absolute;
+  top: 43px;
+  left: 24px;
+  width: 76px;
+  height: 175px;
+  background: linear-gradient(90deg, #080608, #21131a, #090609);
+  clip-path: polygon(25% 0, 75% 0, 100% 100%, 0 100%);
+}
+.bouquet {
+  position: absolute;
+  top: 57px;
+  left: 84px;
+  width: 105px;
+  height: 100px;
+  z-index: 5;
+  animation: offer 2.5s ease-out forwards;
+  transform-origin: bottom center;
+}
+@keyframes offer {
+  from { transform: translate(-25px, 20px) scale(.5); opacity: 0; }
+  to { transform: translate(0, 0) scale(1); opacity: 1; }
+}
+.rose {
+  position: absolute;
+  font-size: 31px;
+  filter: drop-shadow(0 0 5px #d0002e);
+}
+.r1 { top: 0; left: 8px; }
+.r2 { top: 10px; left: 36px; }
+.r3 { top: 0; left: 60px; }
+.r4 { top: 30px; left: 20px; }
+.r5 { top: 32px; left: 53px; }
+.wrap {
+  position: absolute;
+  top: 35px;
+  left: 22px;
+  width: 53px;
+  height: 65px;
+  background: linear-gradient(120deg, #420712, #150308);
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 30% 100%);
+  z-index: -1;
+}
+.ribbon {
+  position: absolute;
+  bottom: -4px;
+  left: 35px;
+  color: #ff526d;
+  font-size: 23px;
+}
+.card {
+  position: absolute;
+  top: 76px;
+  left: 4px;
+  width: 95px;
+  padding: 5px 2px;
+  background: #f8e3cf;
+  color: #65051b;
+  border: 1px solid #d2a98a;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  box-shadow: 0 0 12px #ff4760;
+  transform: rotate(-5deg);
+}
+.message {
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+  text-align: center;
+  color: #ffd4dd;
+  font-size: 18px;
+  text-shadow: 0 0 12px #ff1748;
+  animation: pulse 2s infinite;
+}
+@media (max-width: 380px) {
+  .couple { transform: translateX(-50%) scale(.83); }
+  .title { font-size: 19px; }
+  .message { font-size: 15px; }
+}
+</style>
+</head>
+<body>
+<div class="scene">
+  <div class="title">A Special Apology ❤️</div>
+  <div class="lights" id="lights"></div>
+  <div class="heart">♡</div>
+  <div class="floor"></div>
+  <div class="candle" style="left:8%"></div>
+  <div class="candle" style="left:23%;height:35px"></div>
+  <div class="candle" style="right:20%;height:42px"></div>
+  <div class="candle" style="right:7%;height:53px"></div>
+  <div class="couple">
+    <div class="man">
+      <div class="hair"></div>
+      <div class="head"></div>
+      <div class="bodyman"></div>
+      <div class="arm"></div>
+      <div class="hand"></div>
+      <div class="leg"></div>
+      <div class="knee"></div>
+      <div class="shoe"></div>
+    </div>
+    <div class="girl">
+      <div class="ghair"></div>
+      <div class="ghead"></div>
+      <div class="gbody"></div>
+    </div>
+    <div class="bouquet">
+      <div class="wrap"></div>
+      <div class="rose r1">🌹</div>
+      <div class="rose r2">🌹</div>
+      <div class="rose r3">🌹</div>
+      <div class="rose r4">🌹</div>
+      <div class="rose r5">🌹</div>
+      <div class="card">Sorry<br>Malaika<br>❤️‍🩹🥺</div>
+      <div class="ribbon">🎀</div>
+    </div>
+  </div>
+  <div class="message">Sorry Malaika ❤️‍🩹🥺</div>
+</div>
+<script>
+const lights = document.getElementById("lights");
+for (let i = 0; i < 35; i++) {
+  const light = document.createElement("span");
+  light.className = "light";
+  light.style.left = Math.random() * 100 + "%";
+  light.style.top = Math.random() * 100 + "%";
+  light.style.animationDelay = Math.random() * 2 + "s";
+  lights.appendChild(light);
+}
+function createPetal() {
+  const petal = document.createElement("div");
+  petal.className = "petal";
+  petal.textContent = Math.random() > .5 ? "🌹" : "🌸";
+  petal.style.left = Math.random() * 100 + "%";
+  petal.style.animationDuration = (5 + Math.random() * 7) + "s";
+  petal.style.fontSize = (10 + Math.random() * 13) + "px";
+  document.querySelector(".scene").appendChild(petal);
+  setTimeout(() => petal.remove(), 12000);
+}
+setInterval(createPetal, 650);
+</script>
+</body>
+</html>
